@@ -64,11 +64,9 @@ public class RestUtilities {
 			response = given().spec(REQUEST_SPEC).get(ENDPOINT);
 		} else if (type.equalsIgnoreCase("post")) {
 			response = given().spec(REQUEST_SPEC).post(ENDPOINT);
-		} else if (type.equalsIgnoreCase("put")) {
-			response = given().spec(REQUEST_SPEC).put(ENDPOINT);
-		} else if (type.equalsIgnoreCase("delete")) {
-			response = given().spec(REQUEST_SPEC).delete(ENDPOINT);
-		} else {
+		} 
+		
+			 else {
 			System.out.println("Type is not supported");
 		}
 		response.then().log().all();

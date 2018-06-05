@@ -24,7 +24,9 @@ import java.util.List;
 
 
 
-
+//I have used couple of different ways of assertion 
+//to illustrate you can utilize mutliple approaches
+//depneding on needs
 
 
 public class GetApiTest {
